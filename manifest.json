@@ -1,0 +1,15 @@
+{
+  "launcherVersion": "1.0.0",
+  "packVersion": "1.0.0",
+  "packName": "The Broken Script Enhanced",
+  "minecraft": "1.21.1",
+  "neoforge": "21.1.249",
+  "server": {
+    "host": "202.181.188.169",
+    "port": 25841
+  },
+  "manifestUrl": "https://raw.githubusercontent.com/MrAIinator/tbs-launcher/main/manifest.json",
+  "packUrl": "https://github.com/MrAIinator/tbs-launcher/raw/refs/heads/main/pack/pack.mrpack",
+  "launcherUrl": "https://github.com/MrAIinator/tbs-launcher/releases/download/v1.0.0/TBS-Launcher-win64.zip",
+  "notes": "NeoForge 21.1.249 (не ниже 21.1.49). Прямой вход на 202.181.188.169:25841."
+}

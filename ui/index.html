@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TBS Launcher</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Unbounded:wght@500;700&display=swap" />
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <div class="scan"></div>
+    <main>
+      <header>
+        <div>
+          <p class="kicker">NULL SIGNAL // 1.21.1</p>
+          <h1>THE BROKEN SCRIPT</h1>
+          <p id="sub" class="muted">ENHANCED</p>
+        </div>
+        <div class="card row" id="server-pill">
+          <div>
+            <p id="server-live">сервер…</p>
+            <p id="server-addr" class="muted"></p>
+          </div>
+        </div>
+      </header>
+      <div class="tear"></div>
+      <section class="grid">
+        <aside class="card">
+          <p class="kicker">ЛИЦЕНЗИЯ</p>
+          <p id="account">не привязана</p>
+          <button id="login" type="button">ПРИВЯЗАТЬ</button>
+          <button id="logout" type="button" class="ghost">ВЫЙТИ</button>
+          <p id="login-box" class="code hidden"></p>
+        </aside>
+        <div class="center">
+          <p class="kicker">ПРЯМОЙ ВХОД</p>
+          <p id="ip" class="ip"></p>
+          <button id="play" class="glitch" type="button"><span id="play-label" data-text="ИГРАТЬ">ИГРАТЬ</span></button>
+          <p id="phase" class="muted">ожидание</p>
+          <div class="bar"><div id="fill"></div></div>
+          <pre id="log"></pre>
+          <div class="actions">
+            <button id="cancel" type="button" class="ghost">ОТМЕНА</button>
+            <button id="repair" type="button" class="ghost">ПОЧИНИТЬ ФАЙЛЫ</button>
+            <button id="quit" type="button" class="ghost">ЗАКРЫТЬ</button>
+          </div>
+        </div>
+        <aside class="card">
+          <p class="kicker">СБОРКА</p>
+          <p id="stats"></p>
+          <p id="warn" class="muted"></p>
+        </aside>
+      </section>
+      <nav>
+        <button type="button" data-panel="mods">МОДЫ</button>
+        <button type="button" data-panel="settings">НАСТРОЙКИ</button>
+        <button type="button" data-panel="updates">ОБНОВЛЕНИЯ</button>
+      </nav>
+      <section id="panel" class="card hidden"></section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

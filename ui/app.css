@@ -1,0 +1,151 @@
+:root {
+  color-scheme: dark;
+  --blood: #c4161c;
+  --bone: #f4ece8;
+  --dust: #c4aaa4;
+  --line: #5c282c;
+  --display: "Unbounded", sans-serif;
+  --mono: "Share Tech Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  color: var(--bone);
+  font-family: var(--mono);
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.55) 42%, #000),
+    linear-gradient(180deg, #c4161c 0%, #8a1016 14%, #2a070b 40%, #0a0203 64%, #000);
+}
+
+button { cursor: pointer; font: inherit; color: inherit; }
+
+.scan {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.18) 0 1px, transparent 1px 3px);
+}
+
+main {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 18px 40px;
+}
+
+header, .row { display: flex; justify-content: space-between; gap: 16px; align-items: flex-end; flex-wrap: wrap; }
+
+h1 { font-family: var(--display); font-size: clamp(1.6rem, 4vw, 2.6rem); margin: 0; letter-spacing: 0.04em; }
+
+.kicker { letter-spacing: 0.28em; font-size: 0.75rem; color: var(--dust); margin: 0 0 6px; }
+
+.muted { color: var(--dust); }
+
+.tear { height: 1px; margin: 18px 0; background: linear-gradient(90deg, transparent, var(--blood), transparent); }
+
+.grid { display: grid; grid-template-columns: 220px 1fr 220px; gap: 18px; align-items: center; }
+
+.card {
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.46);
+  padding: 14px;
+}
+
+.center { text-align: center; }
+
+.ip { font-family: var(--display); font-size: 1rem; }
+
+.glitch {
+  position: relative;
+  min-width: 240px;
+  min-height: 76px;
+  margin-top: 12px;
+  border: 1px solid var(--blood);
+  background: rgba(0, 0, 0, 0.62);
+  font-family: var(--display);
+  font-size: 1.4rem;
+  letter-spacing: 0.18em;
+}
+
+.glitch span { position: relative; display: inline-block; }
+
+.glitch span::before,
+.glitch span::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+}
+
+.glitch span::before {
+  color: var(--blood);
+  animation: ga 2.4s infinite linear;
+  clip-path: inset(0 0 58% 0);
+}
+
+.glitch span::after {
+  animation: gb 1.8s infinite linear;
+  clip-path: inset(42% 0 0 0);
+}
+
+.glitch:hover { box-shadow: 0 0 28px rgba(196, 22, 28, 0.45); background: rgba(196, 22, 28, 0.2); }
+.glitch:disabled { opacity: 0.45; }
+
+@keyframes ga {
+  0%, 70%, 100% { transform: none; }
+  74% { transform: translate(-4px, -1px); }
+  80% { transform: translate(4px, 1px); }
+}
+@keyframes gb {
+  0%, 62%, 100% { transform: none; }
+  66% { transform: translate(4px, 0); }
+  72% { transform: translate(-5px, 1px); }
+}
+
+.bar { height: 4px; margin: 12px auto 0; max-width: 360px; background: #1a0608; }
+#fill { height: 100%; width: 0; background: var(--blood); }
+
+#log {
+  min-height: 7.5rem;
+  max-height: 9rem;
+  overflow: auto;
+  text-align: left;
+  font-size: 12px;
+  white-space: pre-wrap;
+  color: var(--dust);
+}
+
+.actions, nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 12px; }
+
+button, .chip, input {
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.45);
+  min-height: 44px;
+  padding: 0 12px;
+}
+
+button[data-on="true"], .on { border-color: var(--blood); box-shadow: inset 0 0 0 1px var(--blood); }
+
+.ghost { background: transparent; }
+
+.hidden { display: none; }
+
+.code { font-family: var(--display); font-size: 1.6rem; letter-spacing: 0.14em; }
+
+#panel { margin-top: 14px; }
+
+.list { max-height: 280px; overflow: auto; columns: 2; gap: 16px; padding: 0; margin: 8px 0 0; }
+.list li { list-style: none; display: flex; justify-content: space-between; gap: 8px; border-bottom: 1px solid rgba(92, 40, 44, 0.7); padding: 4px 0; font-size: 13px; }
+
+input[type="range"] { accent-color: var(--blood); width: 100%; }
+
+@media (max-width: 860px) {
+  .grid { grid-template-columns: 1fr; }
+  .list { columns: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glitch span::before, .glitch span::after { animation: none; }
+}
