@@ -1,5 +1,5 @@
 {
-  "launcherVersion": "1.1.1",
+  "launcherVersion": "1.1.2",
   "packVersion": "1.0.0",
   "packName": "The Broken Script Enhanced",
   "minecraft": "1.21.1",
@@ -10,6 +10,6 @@
   },
   "manifestUrl": "https://raw.githubusercontent.com/MrAIinator/tbs-launcher/main/manifest.json",
   "packUrl": "https://github.com/MrAIinator/tbs-launcher/raw/refs/heads/main/pack/pack.mrpack",
-  "launcherUrl": "https://github.com/MrAIinator/tbs-launcher/releases/download/v1.1.1/TBS-Launcher.exe",
-  "notes": "1.1.1: JDK 21 вместо JRE, фикс вылета на загрузке. Дважды кликни TBS-Launcher.exe."
+  "launcherUrl": "https://github.com/MrAIinator/tbs-launcher/releases/download/v1.1.2/TBS-Launcher.exe",
+  "notes": "1.1.2: вылет на загрузке (нативы не в classpath), без прямого входа, лог запуска, иконка."
 }
