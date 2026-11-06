@@ -1,5 +1,5 @@
 {
-  "launcherVersion": "1.1.0",
+  "launcherVersion": "1.1.1",
   "packVersion": "1.0.0",
   "packName": "The Broken Script Enhanced",
   "minecraft": "1.21.1",
@@ -10,6 +10,6 @@
   },
   "manifestUrl": "https://raw.githubusercontent.com/MrAIinator/tbs-launcher/main/manifest.json",
   "packUrl": "https://github.com/MrAIinator/tbs-launcher/raw/refs/heads/main/pack/pack.mrpack",
-  "launcherUrl": "https://github.com/MrAIinator/tbs-launcher/releases/download/v1.1.0/TBS-Launcher.exe",
-  "notes": "Один файл. Дважды кликни TBS-Launcher.exe. NeoForge 21.1.249. Вход сразу на 202.181.188.169:25841."
+  "launcherUrl": "https://github.com/MrAIinator/tbs-launcher/releases/download/v1.1.1/TBS-Launcher.exe",
+  "notes": "1.1.1: JDK 21 вместо JRE, фикс вылета на загрузке. Дважды кликни TBS-Launcher.exe."
 }
