@@ -8,7 +8,7 @@
   "notesEn": "## TBS Launcher 1.2.2\n\nOne-click launcher for **The Broken Script Enhanced** (Minecraft 1.21.1, NeoForge) and the **HelpUs** multiplayer server. It installs Java, Minecraft, NeoForge and the whole modpack for you, keeps everything up to date and connects you straight to the server.\n\n**What's new**\n- The launcher now picks its language from Windows: English is fully supported (you can switch it in Settings).\n- Updated the HelpUs client mod.\n\n**How to start:** download `TBS-Launcher.exe` below and run it. Windows SmartScreen may warn about an unknown publisher: click *More info → Run anyway*.\n\nSomething is watching the server. Don't play alone.",
   "packName": "The Broken Script Enhanced",
   "packUrl": "https://github.com/MrAIinator/tbs-launcher/raw/refs/heads/main/pack/pack.mrpack",
-  "packVersion": "1.0.0",
+  "packVersion": "1.0.1",
   "server": {
     "host": "202.181.188.169",
     "port": 25841
