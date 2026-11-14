@@ -5,7 +5,7 @@
   "minecraft": "1.21.1",
   "neoforge": "21.1.249",
   "notes": "## TBS Launcher 1.2.3\n\n**Исправлено:** если установка NeoForge когда-то оборвалась (закрыли лаунчер, вмешался антивирус), игра вылетала сразу при запуске. Теперь лаунчер замечает недоустановленный NeoForge и ставит его заново.\n\nСкачай `TBS-Launcher.exe` ниже и запусти. Если Windows SmartScreen предупредит, нажми *Подробнее → Выполнить в любом случае*.",
-  "notesEn": "## TBS Launcher 1.2.2\n\nOne-click launcher for **The Broken Script Enhanced** (Minecraft 1.21.1, NeoForge) and the **HelpUs** multiplayer server. It installs Java, Minecraft, NeoForge and the whole modpack for you, keeps everything up to date and connects you straight to the server.\n\n**What's new**\n- The launcher now picks its language from Windows: English is fully supported (you can switch it in Settings).\n- Updated the HelpUs client mod.\n\n**How to start:** download `TBS-Launcher.exe` below and run it. Windows SmartScreen may warn about an unknown publisher: click *More info → Run anyway*.\n\nSomething is watching the server. Don't play alone.",
+  "notesEn": "## TBS Launcher 1.2.3\n\n**Fixed:** if a NeoForge install was ever interrupted (launcher closed, antivirus got in the way), the game crashed right on start. The launcher now detects a half-installed NeoForge and reinstalls it.\n\nOne-click launcher for **The Broken Script Enhanced** (Minecraft 1.21.1, NeoForge) and the **HelpUs** server. Download `TBS-Launcher.exe` below and run it. If Windows SmartScreen warns you, click *More info → Run anyway*.",
   "packName": "The Broken Script Enhanced",
   "packUrl": "https://github.com/MrAIinator/tbs-launcher/raw/refs/heads/main/pack/pack.mrpack",
   "packVersion": "1.0.1",
