@@ -4,11 +4,11 @@
   "manifestUrl": "https://raw.githubusercontent.com/MrAIinator/tbs-launcher/main/manifest.json",
   "minecraft": "1.21.1",
   "neoforge": "21.1.267",
-  "notes": "TBS Liminal 0.9.4: ящики стоят на полу, полки не вставляются друг в друга, в мебели появился лут, проходимые стены осыпаются крошкой.",
+  "notes": "TBS Liminal 0.9.5.",
   "notesEn": "## TBS Launcher 1.2.3\n\n**Fixed:** if a NeoForge install was ever interrupted (launcher closed, antivirus got in the way), the game crashed right on start. The launcher now detects a half-installed NeoForge and reinstalls it.\n\nOne-click launcher for **The Broken Script Enhanced** (Minecraft 1.21.1, NeoForge) and the **HelpUs** server. Download `TBS-Launcher.exe` below and run it. If Windows SmartScreen warns you, click *More info → Run anyway*.",
   "packName": "The Broken Script Enhanced",
   "packUrl": "https://github.com/MrAIinator/tbs-launcher/raw/refs/heads/main/pack/pack.mrpack",
-  "packVersion": "1.0.8",
+  "packVersion": "1.0.9",
   "server": {
     "host": "202.181.188.169",
     "port": 25841
